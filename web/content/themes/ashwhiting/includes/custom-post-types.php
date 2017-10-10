@@ -1,17 +1,17 @@
 <?php
 
 // Use this file to create custom post types.
-// Example post type - Change this or delete it
+// Portfolio post type - Change this or delete it
 
-function example_post_type() {
+function portfolio_post_type() {
 
     $labels = array(
-        'name'                  => _x( 'Example', 'Post Type General Name', 't_seed_theme' ),
-        'singular_name'         => _x( 'Example', 'Post Type Singular Name', 't_seed_theme' ),
-        'name_admin_bar'        => __( 'Example', 't_seed_theme' ),
-        'parent_item_colon'     => __( 'Parent Example:', 't_seed_theme' ),
-        'all_items'             => __( 'All Examples', 't_seed_theme' ),
-        'add_new_item'          => __( 'Add New Example', 't_seed_theme' ),
+        'name'                  => _x( 'Portfolio', 'Post Type General Name', 't_seed_theme' ),
+        'singular_name'         => _x( 'Portfolio', 'Post Type Singular Name', 't_seed_theme' ),
+        'name_admin_bar'        => __( 'Portfolio', 't_seed_theme' ),
+        'parent_item_colon'     => __( 'Parent Portfolio:', 't_seed_theme' ),
+        'all_items'             => __( 'All Portfolios', 't_seed_theme' ),
+        'add_new_item'          => __( 'Add New Portfolio', 't_seed_theme' ),
         'add_new'               => __( 'Add New', 't_seed_theme' ),
         'new_item'              => __( 'New Item', 't_seed_theme' ),
         'edit_item'             => __( 'Edit Item', 't_seed_theme' ),
@@ -25,8 +25,8 @@ function example_post_type() {
         'filter_items_list'     => __( 'Filter items list', 't_seed_theme' ),
     );
     $args = array(
-        'label'                 => __( 'Example', 't_seed_theme' ),
-        'description'           => __( 'Example Custom Post', 't_seed_theme' ),
+        'label'                 => __( 'Portfolio', 't_seed_theme' ),
+        'description'           => __( 'Portfolio Custom Post', 't_seed_theme' ),
         'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'revisions', 'thumbnail', 'excerpt', 'page-attributes'),
         'taxonomies'            => array( ),
@@ -44,25 +44,25 @@ function example_post_type() {
         'publicly_queryable'    => true,
         'capability_type'       => 'page'
     );
-    register_post_type( 'examples', $args );
+    register_post_type( 'portfolio', $args );
 }
-add_action( 'init', 'example_post_type', 0 );
+add_action( 'init', 'portfolio_post_type', 0 );
 
-// Example taxonomy
+// Portfolio taxonomy
 
-function example_taxonomy() {
+function portfolio_taxonomy() {
 	$labels = array(
-		'name'              => _x( 'Example Types', 'taxonomy general name', 't_seed_theme' ),
-		'singular_name'     => _x( 'Example Types', 'taxonomy singular name', 't_seed_theme' ),
-		'search_items'      => __( 'Search Example Types', 't_seed_theme' ),
-		'all_items'         => __( 'All Example Types', 't_seed_theme' ),
-		'parent_item'       => __( 'Parent Example Type', 't_seed_theme' ),
-		'parent_item_colon' => __( 'Parent Example Type:', 't_seed_theme' ),
-		'edit_item'         => __( 'Edit Example Type', 't_seed_theme' ),
-		'update_item'       => __( 'Update Example Type', 't_seed_theme' ),
-		'add_new_item'      => __( 'Add New Example Type', 't_seed_theme' ),
-		'new_item_name'     => __( 'New Example Type', 't_seed_theme' ),
-		'menu_name'         => __( 'Example Type', 't_seed_theme' ),
+		'name'              => _x( 'Portfolio Types', 'taxonomy general name', 't_seed_theme' ),
+		'singular_name'     => _x( 'Portfolio Types', 'taxonomy singular name', 't_seed_theme' ),
+		'search_items'      => __( 'Search Portfolio Types', 't_seed_theme' ),
+		'all_items'         => __( 'All Portfolio Types', 't_seed_theme' ),
+		'parent_item'       => __( 'Parent Portfolio Type', 't_seed_theme' ),
+		'parent_item_colon' => __( 'Parent Portfolio Type:', 't_seed_theme' ),
+		'edit_item'         => __( 'Edit Portfolio Type', 't_seed_theme' ),
+		'update_item'       => __( 'Update Portfolio Type', 't_seed_theme' ),
+		'add_new_item'      => __( 'Add New Portfolio Type', 't_seed_theme' ),
+		'new_item_name'     => __( 'New Portfolio Type', 't_seed_theme' ),
+		'menu_name'         => __( 'Portfolio Type', 't_seed_theme' ),
 	);
 
 	$args = array(
@@ -72,6 +72,6 @@ function example_taxonomy() {
 		'has_archive'   => true,
 	);
 
-	register_taxonomy( 'example_category', 'examples', $args );
+	register_taxonomy( 'portfolio_category', 'portfolio', $args );
 }
-add_action( 'init', 'example_taxonomy', 0 );
+add_action( 'init', 'portfolio_taxonomy', 0 );
