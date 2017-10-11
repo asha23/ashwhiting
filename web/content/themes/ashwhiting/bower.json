@@ -16,7 +16,8 @@
   "dependencies": {
     "jquery-cycle2": "^2.1.6",
     "modernizr": "^3.3.1",
-    "requirejs": "2.3.3"
+    "requirejs": "2.3.3",
+    "trianglify": "^1.1.0"
   },
   "devDependencies": {
     "jquery": "~1.11.3",

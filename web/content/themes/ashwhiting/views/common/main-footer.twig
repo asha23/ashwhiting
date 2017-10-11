@@ -1,11 +1,61 @@
+{{options.copyright_info}}
+
+{% set social = social %}
+{% set social_items = options.social_items %}
+
+
+
 <footer id="footer" class="container-fluid">
 	<div class="inner">
 	    <div class="row">
 	        <article>
 
-	        </article>
-	        <article>
-	           
+                {% for social in social_items %}
+
+                    {% set network = social.select_network %}
+
+
+                    {% if network == "linkedin" %}
+                        <a href="{{social.url}}" target="_blank" title="LinkedIn">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    {% endif %}
+
+                    {% if network == "github" %}
+                        <a href="{{social.url}}" target="_blank" title="GitHub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    {% endif %}
+
+                    {% if network == "codepen" %}
+                        <a href="{{social.url}}" target="_blank" title="CodePen">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-codepen fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    {% endif %}
+
+                    {% if network == "email" %}
+                        <a href="mailto:{{social.email}}?subject=Enquiry from ashwhiting.com" title="Send Ash an Email">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    {% endif %}
+
+
+
+
+                {% endfor %}
+
 	        </article>
 	    </div>
 	</inner>

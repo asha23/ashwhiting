@@ -14,10 +14,11 @@
     background: url('../images/loading.gif') no-repeat scroll center center transparent;
 }
 // PARTIALS
+@import "core/colours";
 @import "wordpress/wordpress-core";
 @import "core/typography";
 @import "core/globals";
-@import "core/colours";
+
 @import "core/blocks";
 @import "core/footer";
 @import "core/header";

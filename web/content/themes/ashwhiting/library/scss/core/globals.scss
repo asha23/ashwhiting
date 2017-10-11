@@ -4,14 +4,28 @@
 /// @author Ash Whiting
 ////
 
+
+canvas {
+  height: 50vh;
+  width: 100vw;
+  display: block;
+  opacity:0.2;
+}
+
+
 body {
 
 	font-family: $quicksand;
 	font-weight: 400;
+	background:white;
+	@include fs(18,24);
+
 	@media (max-width:$screen-xs-max) {
 		margin-top: 0;
 	}
 }
+
+
 // Preferred responsive image (no display:block)
 .img-respond {
 	width: 100%;

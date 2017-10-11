@@ -39,6 +39,7 @@ var jsFileList = [
 	config.bowerPath        + 'parallax.js/parallax.js',
 	config.bowerPath        + 'jquery-cycle2/build/jquery.cycle2.js',
 	config.bowerPath        + 'jquery-cycle2/src/jquery.cycle2.swipe.js',
+	config.bowerPath        + 'trianglify/dist/trianglify.min.js',
 	config.jsPathVendor  	+ 'lightgallery/lightgallery.js',
 	config.jsPathVendor  	+ 'lg-thumbnail/lg-thumbnail.js',
 	config.jsPathVendor  	+ 'lg-video/lg-video.js',

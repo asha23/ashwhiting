@@ -3,6 +3,9 @@
 // Suppress Lint semicolon warnings
 /* jshint asi: true */
 
+// Shards
+
+
 jQuery(document).ready(function($) {
 
 	// Galleries
@@ -87,5 +90,35 @@ jQuery(document).ready(function($) {
 	    target: null,
 	    remove: false
 	});
+
+	// var canvas = $('#mycanvas');
+	// ctx = canvas.getContext('2d');
+	//
+	// window.addEventListener('resize', resizeCanvas, false);
+	//
+	// function resizeCanvas() {
+	// 	canvas.width = window.innerWidth;
+	// 	canvas.height = window.innerHeight/2;
+	// 	drawStuff
+	// }
+	//
+	// resizeCanvas;
+	//
+	//
+	//
+	// function drawStuff() {
+	//
+	// }
+
+	cellsize = Math.floor(Math.random() * 100) + 20
+
+	var pattern = Trianglify({
+		variance:1,
+		cell_size: cellsize,
+		seed: null,
+		x_colors: 'random'
+	});
+	pattern.canvas(document.getElementById('mycanvas'));
+
 
 });

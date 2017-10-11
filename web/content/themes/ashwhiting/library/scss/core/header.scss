@@ -1,15 +1,14 @@
 #header-logo {
-	margin-top:30px;
-	margin-bottom:30px;
+
 	position:relative;
 
 	.main-logo {
+		display:inline-block;
 		@include fs(100,0);
 		transform: rotate(90deg);
 		position: fixed;
-		top: -200px;
-		bottom: 0;
-		left: -53%;
+		top: 40%;
+		left: -293px;
 		z-index: 1000;
 		text-align: left;
 		text-transform:uppercase;

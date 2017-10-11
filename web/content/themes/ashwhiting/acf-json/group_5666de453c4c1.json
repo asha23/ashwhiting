@@ -3,10 +3,10 @@
     "title": "(OPTIONS) Global",
     "fields": [
         {
-            "key": "field_59dde2f6bcb07",
-            "label": "Social",
-            "name": "social",
-            "type": "group",
+            "key": "field_59dde302bcb08",
+            "label": "Social Items",
+            "name": "social_items",
+            "type": "repeater",
             "value": null,
             "instructions": "",
             "required": 0,
@@ -16,70 +16,103 @@
                 "class": "",
                 "id": ""
             },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
             "layout": "block",
+            "button_label": "Add Social Network",
             "sub_fields": [
                 {
-                    "key": "field_59dde302bcb08",
-                    "label": "Social Items",
-                    "name": "social_items",
-                    "type": "repeater",
+                    "key": "field_59dde319bcb09",
+                    "label": "Select Network",
+                    "name": "select_network",
+                    "type": "button_group",
                     "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "30",
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "block",
-                    "button_label": "Add Social Network",
-                    "sub_fields": [
-                        {
-                            "key": "field_59dde319bcb09",
-                            "label": "Select Network",
-                            "name": "select_network",
-                            "type": "button_group",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "linkedin": "Linkedin",
-                                "github": "Github",
-                                "codepen": "Codepen"
-                            },
-                            "allow_null": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value"
-                        },
-                        {
-                            "key": "field_59dde353bcb0a",
-                            "label": "Url",
-                            "name": "url",
-                            "type": "url",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": ""
-                        }
-                    ]
+                    "choices": {
+                        "linkedin": "Linkedin",
+                        "github": "Github",
+                        "codepen": "Codepen",
+                        "email": "Email"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_59dde353bcb0a",
+                    "label": "Url",
+                    "name": "url",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59dde319bcb09",
+                                "operator": "==",
+                                "value": "linkedin"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_59dde319bcb09",
+                                "operator": "==",
+                                "value": "github"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_59dde319bcb09",
+                                "operator": "==",
+                                "value": "codepen"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59de3677fc471",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59dde319bcb09",
+                                "operator": "==",
+                                "value": "email"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -101,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "THEME SPECIFIC - Global site options",
-    "modified": 1507713932
+    "modified": 1507735253
 }
