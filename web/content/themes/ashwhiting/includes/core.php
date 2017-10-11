@@ -99,10 +99,6 @@ function t_seed_theme_support() {
 
 	// Custom thumbnail sizes (add as many as you like) - Or use a plugin. It's easier.
 
-	add_image_size( 'teaser-half', 524, 270, true );
-	add_image_size( 'teaser-full', 1100, 400, true );
-	add_image_size( 'teaser-main', 300, 300, true );
-
 	// rss thingy
 	add_theme_support('automatic-feed-links');
 

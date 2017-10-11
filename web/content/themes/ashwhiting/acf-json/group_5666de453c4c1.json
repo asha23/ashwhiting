@@ -1,7 +1,89 @@
 {
     "key": "group_5666de453c4c1",
     "title": "(OPTIONS) Global",
-    "fields": false,
+    "fields": [
+        {
+            "key": "field_59dde2f6bcb07",
+            "label": "Social",
+            "name": "social",
+            "type": "group",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_59dde302bcb08",
+                    "label": "Social Items",
+                    "name": "social_items",
+                    "type": "repeater",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Add Social Network",
+                    "sub_fields": [
+                        {
+                            "key": "field_59dde319bcb09",
+                            "label": "Select Network",
+                            "name": "select_network",
+                            "type": "button_group",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "linkedin": "Linkedin",
+                                "github": "Github",
+                                "codepen": "Codepen"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_59dde353bcb0a",
+                            "label": "Url",
+                            "name": "url",
+                            "type": "url",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +101,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "THEME SPECIFIC - Global site options",
-    "modified": 1488976572
+    "modified": 1507713932
 }

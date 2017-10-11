@@ -28,6 +28,8 @@
 				{% include 'content-types/cont-header.twig' %}
 			{% elseif content_block.acf_fc_layout == 'content_carousel' %}
 				{% include 'content-types/cont-carousel.twig' %}
+			{% elseif content_block.acf_fc_layout == 'content_portfolio' %}
+				{% include 'content-types/cont-portfolio.twig' %}
 			{% endif %}
 
 		{% endfor %}

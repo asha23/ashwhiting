@@ -7,6 +7,7 @@
             "label": "Global Content Types",
             "name": "global_content_types",
             "type": "flexible_content",
+            "value": null,
             "instructions": "Please use the \"Add a new content block\" button to create blocks of content on this page. You can re-order by clicking and dragging.",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +16,8 @@
                 "class": "",
                 "id": ""
             },
-            "button_label": "Add a new content block",
-            "min": "",
-            "max": "",
-            "layouts": [
-                {
+            "layouts": {
+                "57d911dc9d0db": {
                     "key": "57d911dc9d0db",
                     "name": "content_text_block",
                     "label": "Content - Text Block",
@@ -30,6 +28,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -49,6 +48,7 @@
                             "label": "Title",
                             "name": "title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -68,6 +68,7 @@
                             "label": "Type",
                             "name": "block_type",
                             "type": "select",
+                            "value": null,
                             "instructions": "Please select the block type. This can be a 2 column split (with or without images) or full width plain text block.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -117,6 +118,7 @@
                             "label": "Image On",
                             "name": "image_on",
                             "type": "select",
+                            "value": null,
                             "instructions": "Please select which side you would like the image to appear.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -142,6 +144,7 @@
                             "label": "Left Column Width",
                             "name": "left_column_width",
                             "type": "select",
+                            "value": null,
                             "instructions": "Left and right columns should be multiples of 12",
                             "required": 0,
                             "conditional_logic": 0,
@@ -177,6 +180,7 @@
                             "label": "Right Column Width",
                             "name": "right_column_width",
                             "type": "select",
+                            "value": null,
                             "instructions": "Left and right columns should be multiples of 12",
                             "required": 0,
                             "conditional_logic": 0,
@@ -212,6 +216,7 @@
                             "label": "Image",
                             "name": "split_image",
                             "type": "image",
+                            "value": null,
                             "instructions": "Insert the image",
                             "required": 0,
                             "conditional_logic": 0,
@@ -236,6 +241,7 @@
                             "label": "Text",
                             "name": "split_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -279,6 +285,7 @@
                             "label": "Content",
                             "name": "full_width_content",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "Please insert your full-width text content. You can also add images here if you would like the text to wrap around the images (be careful of responsive sizing though)",
                             "required": 0,
                             "conditional_logic": 0,
@@ -297,7 +304,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "58c02983ca2cd": {
                     "key": "58c02983ca2cd",
                     "name": "content_custom_header",
                     "label": "Content - Custom Header",
@@ -308,6 +315,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -327,6 +335,7 @@
                             "label": "Toggle",
                             "name": "toggle",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "Toggle this header on or off",
                             "required": 0,
                             "conditional_logic": 0,
@@ -346,6 +355,7 @@
                             "label": "Full Width",
                             "name": "full_width",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "If checked, the header will stretch to the full width of the page. If unchecked it will fit within the standard content width.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -365,6 +375,7 @@
                             "label": "Text Alignment",
                             "name": "text_alignment",
                             "type": "radio",
+                            "value": null,
                             "instructions": "Set the alignment of the text.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -390,6 +401,7 @@
                             "label": "Title Type",
                             "name": "title_type",
                             "type": "radio",
+                            "value": null,
                             "instructions": "If set to auto, the header text will be the page title. If custom you can change this text.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -414,6 +426,7 @@
                             "label": "Add Margins",
                             "name": "add_margins",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -433,6 +446,7 @@
                             "label": "Title Text",
                             "name": "title_text",
                             "type": "textarea",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -459,7 +473,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d92aec80e20": {
                     "key": "57d92aec80e20",
                     "name": "content_full_width_image",
                     "label": "Content - Full Width Image",
@@ -470,6 +484,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -489,6 +504,7 @@
                             "label": "Parallax This",
                             "name": "parallax_this",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "Use this sparingly - It will make the image parallax.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -508,6 +524,7 @@
                             "label": "Parallax Speed",
                             "name": "parallax_speed",
                             "type": "number",
+                            "value": null,
                             "instructions": "0 is minimum 1 is maximum (IE 0.7) - The default speed is recommended.",
                             "required": 0,
                             "conditional_logic": [
@@ -537,6 +554,7 @@
                             "label": "Turn On Overlay",
                             "name": "turn_on_overlay",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "Turn on the text overlay",
                             "required": 0,
                             "conditional_logic": 0,
@@ -556,6 +574,7 @@
                             "label": "Block Title",
                             "name": "title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -583,6 +602,7 @@
                             "label": "Text",
                             "name": "text",
                             "type": "textarea",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -610,6 +630,7 @@
                             "label": "Image",
                             "name": "image",
                             "type": "image",
+                            "value": null,
                             "instructions": "Add a full width image block. This image should be at least 1200 pixels wide or you will not be able to upload it.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -633,7 +654,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d911ee9fc61": {
                     "key": "57d911ee9fc61",
                     "name": "content_downloads",
                     "label": "Content - Downloads",
@@ -644,6 +665,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -663,6 +685,7 @@
                             "label": "Downloads Title",
                             "name": "downloads_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -682,6 +705,7 @@
                             "label": "Downloads Text",
                             "name": "downloads_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -701,6 +725,7 @@
                             "label": "Downloads",
                             "name": "downloads",
                             "type": "repeater",
+                            "value": null,
                             "instructions": "Create a block of downloadable elements",
                             "required": 0,
                             "conditional_logic": 0,
@@ -720,6 +745,7 @@
                                     "label": "Download Image",
                                     "name": "download_image",
                                     "type": "image",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -744,6 +770,7 @@
                                     "label": "Download Element",
                                     "name": "download_element",
                                     "type": "clone",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -765,6 +792,7 @@
                                     "label": "Download Text",
                                     "name": "download_text",
                                     "type": "textarea",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -785,7 +813,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d9120c9fc63": {
                     "key": "57d9120c9fc63",
                     "name": "content_image_gallery",
                     "label": "Content - Image Gallery",
@@ -796,6 +824,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -815,6 +844,7 @@
                             "label": "Block Title",
                             "name": "block_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -834,6 +864,7 @@
                             "label": "Image Gallery Text Intro",
                             "name": "image_gallery_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -853,6 +884,7 @@
                             "label": "Image Gallery",
                             "name": "image_gallery",
                             "type": "gallery",
+                            "value": null,
                             "instructions": "Add images to create an image gallery",
                             "required": 0,
                             "conditional_logic": 0,
@@ -877,7 +909,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d912189fc64": {
                     "key": "57d912189fc64",
                     "name": "content_video",
                     "label": "Content - Video",
@@ -888,6 +920,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -907,6 +940,7 @@
                             "label": "Block Title",
                             "name": "block_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -926,6 +960,7 @@
                             "label": "Video Text Intro",
                             "name": "video_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -945,6 +980,7 @@
                             "label": "Videos",
                             "name": "videos",
                             "type": "repeater",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -964,6 +1000,7 @@
                                     "label": "Video Poster",
                                     "name": "video_poster",
                                     "type": "image",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -988,6 +1025,7 @@
                                     "label": "Video Title",
                                     "name": "video_title",
                                     "type": "text",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1007,6 +1045,7 @@
                                     "label": "Video Text",
                                     "name": "video_text",
                                     "type": "textarea",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1026,6 +1065,7 @@
                                     "label": "Video Url",
                                     "name": "video_url",
                                     "type": "text",
+                                    "value": null,
                                     "instructions": "You should only add the code name. IE: <br><br>\r\nhttps:\/\/www.youtube.com\/watch?v=<strong>QOexw4cXfoY<\/strong>",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1046,7 +1086,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d912259fc65": {
                     "key": "57d912259fc65",
                     "name": "content_table",
                     "label": "Content - Table",
@@ -1057,6 +1097,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1075,7 +1116,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d912329fc66": {
                     "key": "57d912329fc66",
                     "name": "content_accordion",
                     "label": "Content - Accordion",
@@ -1086,6 +1127,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1105,6 +1147,7 @@
                             "label": "Header title",
                             "name": "accordion_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1124,6 +1167,7 @@
                             "label": "Header text",
                             "name": "accordion_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1143,6 +1187,7 @@
                             "label": "Accordion",
                             "name": "accordion",
                             "type": "repeater",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1162,6 +1207,7 @@
                                     "label": "Title",
                                     "name": "title",
                                     "type": "text",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1181,6 +1227,7 @@
                                     "label": "Content",
                                     "name": "content",
                                     "type": "wysiwyg",
+                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1201,7 +1248,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d914cb6384f": {
                     "key": "57d914cb6384f",
                     "name": "content_padding",
                     "label": "Content - Padding\/Horizontal Rule",
@@ -1212,6 +1259,7 @@
                             "label": "Padding",
                             "name": "padding",
                             "type": "select",
+                            "value": null,
                             "instructions": "This adds a block of padding between elements.  The default is 30 Pixels.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1248,6 +1296,7 @@
                             "label": "Add a horizontal line",
                             "name": "hr",
                             "type": "true_false",
+                            "value": null,
                             "instructions": "If you would like this to be a horizontal line, then check this.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1267,6 +1316,7 @@
                             "label": "Ruler Height",
                             "name": "ruler_height",
                             "type": "number",
+                            "value": null,
                             "instructions": "Horizontal line height in pixels",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1287,7 +1337,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "57d9123c9fc67": {
                     "key": "57d9123c9fc67",
                     "name": "teaser_block",
                     "label": "Content - Teaser Block",
@@ -1298,6 +1348,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "Name this content block",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1317,6 +1368,7 @@
                             "label": "How Many Per Row",
                             "name": "row_number",
                             "type": "select",
+                            "value": null,
                             "instructions": "Please select how many teasers per row. You should then select this amount of teasers in the Relationship box below.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1346,6 +1398,7 @@
                             "label": "Teaser Header",
                             "name": "teaser_header",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1365,6 +1418,7 @@
                             "label": "Teaser Header Text",
                             "name": "teaser_header_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1384,6 +1438,7 @@
                             "label": "Teaser Component",
                             "name": "teaser_component",
                             "type": "relationship",
+                            "value": null,
                             "instructions": "Please add elements from the website - They are ordered on the frontend from left to right, so the top down order reflects the website positioning.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1408,7 +1463,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "58c2bfcb500f9": {
                     "key": "58c2bfcb500f9",
                     "name": "content_carousel",
                     "label": "Content - Carousel",
@@ -1419,6 +1474,7 @@
                             "label": "Layout Title",
                             "name": "layout_title",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1438,6 +1494,7 @@
                             "label": "Carousel Header",
                             "name": "carousel_header",
                             "type": "text",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1457,6 +1514,7 @@
                             "label": "Carousel Header Text",
                             "name": "carousel_header_text",
                             "type": "wysiwyg",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1476,6 +1534,7 @@
                             "label": "Carousel Type",
                             "name": "carousel_type",
                             "type": "select",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1526,6 +1585,7 @@
                             "label": "Carousel Images",
                             "name": "carousel_images",
                             "type": "gallery",
+                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1549,8 +1609,259 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "59ddded1642f8": {
+                    "key": "59ddded1642f8",
+                    "name": "content_portfolio",
+                    "label": "Content - Portfolio",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59dde0e8fa176",
+                            "label": "Portfolio",
+                            "name": "portfolio",
+                            "type": "repeater",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add a New Portfolio Item",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59dde1249b7f7",
+                                    "label": "Portfolio Items",
+                                    "name": "portfolio_items",
+                                    "type": "group",
+                                    "value": null,
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_59ddfa535195a",
+                                            "label": "Title",
+                                            "name": "title",
+                                            "type": "text",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_59dddfe0642fa",
+                                            "label": "Image",
+                                            "name": "image",
+                                            "type": "image",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_59dddff7642fb",
+                                            "label": "Caption",
+                                            "name": "caption",
+                                            "type": "textarea",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": ""
+                                        },
+                                        {
+                                            "key": "field_59ddfafe4aab1",
+                                            "label": "------",
+                                            "name": "",
+                                            "type": "message",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "message": "",
+                                            "new_lines": "wpautop",
+                                            "esc_html": 0
+                                        },
+                                        {
+                                            "key": "field_59dde00b642fc",
+                                            "label": "Client",
+                                            "name": "client",
+                                            "type": "text",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "33",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_59dde018642fd",
+                                            "label": "Company",
+                                            "name": "company",
+                                            "type": "text",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "33",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_59dde025642fe",
+                                            "label": "Link Select",
+                                            "name": "link_select",
+                                            "type": "button_group",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "33",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "choices": {
+                                                "internal": "Internal",
+                                                "external": "External"
+                                            },
+                                            "allow_null": 0,
+                                            "default_value": "",
+                                            "layout": "horizontal",
+                                            "return_format": "value"
+                                        },
+                                        {
+                                            "key": "field_59dde078642ff",
+                                            "label": "Internal Link",
+                                            "name": "internal_link",
+                                            "type": "page_link",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_59dde025642fe",
+                                                        "operator": "==",
+                                                        "value": "internal"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "33",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "post_type": [],
+                                            "taxonomy": [],
+                                            "allow_null": 0,
+                                            "allow_archives": 1,
+                                            "multiple": 0
+                                        },
+                                        {
+                                            "key": "field_59dde08f64300",
+                                            "label": "External Link",
+                                            "name": "external_link",
+                                            "type": "url",
+                                            "value": null,
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_59dde025642fe",
+                                                        "operator": "==",
+                                                        "value": "external"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "33",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
-            ]
+            },
+            "button_label": "Add a new content block",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -1559,20 +1870,6 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "page-content-blocks.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-examples.php"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "examples"
             }
         ]
     ],
@@ -1591,5 +1888,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1489413841
+    "modified": 1507720004
 }

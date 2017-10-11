@@ -5,69 +5,61 @@
 ////
 
 body {
-	margin-top:136px;
 
+	font-family: $quicksand;
+	font-weight: 400;
 	@media (max-width:$screen-xs-max) {
-		margin-top:0;
+		margin-top: 0;
 	}
 }
-
 // Preferred responsive image (no display:block)
-
 .img-respond {
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: auto;
 }
-
 // Show/Hide mobile/desktop
-
 .dt {
-	display:block;
-
+	display: block;
 	@media (max-width:$screen-xs-max) {
-		display:none;
+		display: none;
 	}
 }
 
 .mob {
-	display:block;
-
+	display: block;
 	@media (min-width:$screen-xs-max) {
-		display:none;
+		display: none;
 	}
 }
 
 .parallax-mirror {
 	@media (max-width:$screen-xs-max) {
-		display:none!important;
-		visibility:hidden!important;
+		display: none!important;
+		visibility: hidden!important;
 	}
 }
-
 // 404
-
 .not-found {
 	.row {
-		min-height:500px;
-		text-align:center;
+		min-height: 500px;
+		text-align: center;
 
 		h1 {
-			padding-bottom:5px;
-			border-bottom:1px solid $gray-lighter;
-			margin-bottom:40px;
-			margin-top:100px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $gray-lighter;
+			margin-bottom: 40px;
+			margin-top: 100px;
 		}
 	}
 }
-
 // button
-
 .btn {
 	transition: all 0.5s ease;
-	outline:0;
+	outline: 0;
 
-	&:focus,
-	&:active, {
-		outline:0
+	,
+	&:active,
+	&:focus {
+		outline: 0;
 	}
 }

@@ -19,5 +19,40 @@
 				}
 			}
 		}
+
+		.full-width {
+			margin-top:60px;
+			margin-bottom:60px;
+
+			header {
+				text-align:center;
+				position:relative;
+
+				h2 {
+					@include fs(42);
+					display:inline-block;
+					position:relative;
+					color:#504b49;
+					font-weight:300;
+					font-family:$quicksand;
+
+
+					&:after {
+						position:absolute;
+						border-bottom:1px solid #504b49;
+						height:1px;
+						bottom:-30px;
+						left:0;
+						right:0;
+						content:"";
+					}
+				}
+			}
+
+			.full-width-content {
+				margin-top:90px;
+				text-align:justify;
+			}
+		}
 	}
 }

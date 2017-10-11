@@ -1,69 +1,13 @@
 {# Uses the standard Bootstrap navigation system #}
 
-<body class="{{ body_class }}" >
+<body class="{{ body_class }}">
 
-<!-- Google analytics should be added here -->
+	<!-- Google analytics should be added here -->
 
-<!-- -->
+	<!-- -->
 
-	<header id="header" class="container-fluid navbar-fixed-top">
-	    <div class="row">
-
-			<div class="navbar-main-logo">
-				<h3><a href="{{function('bloginfo','url')}}/" title="{{ function('wp_title') }}" rel="homepage">
-					{{ function('bloginfo','title') }}
-				</a></h3>
-			</div>
-
-			<nav class="navbar navbar-default " role="navigation">
-
-				<div class="navbar-header">
-
-					<div class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-
-				</div>
-
-				{# Collect the nav links, forms, and other content for toggling #}
-
-				<div class="collapse navbar-collapse" id="nav-menu">
-			           <ul class="nav navbar-nav">
-
-			               {% for item in main_nav.get_items %}
-
-			                   {% set classes = item.classes|join(' ') %}
-			                   {% if item.get_children %} {% set classes = classes ~ ' dropdown' %} {% endif %}
-			                   {% if 'current-menu-item' in item.classes %} {% set classes = classes ~ ' active' %} {% endif %}
-			                   {% if 'current-menu-parent' in item.classes %} {% set classes = classes ~ ' active' %} {% endif %}
-			                   {% if 'current-menu-ancestor' in item.classes %} {% set classes = classes ~ ' active' %} {% endif %}
-
-			                   <li class="{{ classes }}">
-
-			                       <a {{ item.get_children ? 'class="dropdown-toggle" data-toggle="dropdown"' }} href="{{ item.get_link }}">
-			                           {{ item.title }} {% if item.get_children %}<span class="caret"></span>{% endif %}
-			                       </a>
-
-			                       {% if item.get_children %}
-			                           <ul class="dropdown-menu">
-			                               {% for child in item.get_children %}
-			                                   {% set classes = child.classes|join(' ') %}
-			                                   {% if 'current-menu-item' in child.classes %} {% set classes = classes ~ ' active' %} {% endif %}
-			                                   <li class="{{ classes }}">
-			                                       <a href="{{ child.get_link }}">{{ child.title }}</a>
-			                                   </li>
-			                               {% endfor %}
-			                           </ul>
-			                       {% endif %}
-
-			               {% endfor %}
-
-			           </ul>
-			       </div><!-- /.navbar-collapse -->
-
-			</nav>
-
-	    </div>
+	<header id="header-logo" class="container-fluid">
+		<div class="main-logo">
+			Lor Ipsumng
+		</div>
 	</header>

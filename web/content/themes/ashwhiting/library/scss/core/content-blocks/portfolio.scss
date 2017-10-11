@@ -1,0 +1,116 @@
+////
+/// portfolio.scss
+/// Blocks
+/// @author Ash Whiting
+////
+
+.portfolio {
+
+	.row {
+
+		.portfolio-item {
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			position:relative;
+			padding:0;
+			border:1px solid white;
+
+			.image {
+
+			}
+
+			.overlay {
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				color:white;
+				// display: flex;
+				// align-items: center;
+				// justify-content: center;
+				opacity:1;
+				transition:all 0.5s ease;
+
+				@media (max-device-width:$screen-tablet) {
+					opacity:1;
+				}
+
+				.overlay-inner {
+
+					position:relative;
+
+					.title {
+						position:absolute;
+						top:30px;
+						right:10px;
+						transform: rotate(90deg);
+						text-align:right;
+
+						h3 {
+							letter-spacing:1px;
+							text-transform:uppercase;
+							font-weight:700;
+						}
+					}
+				}
+			}
+
+			.captions {
+				position:absolute;
+				bottom:0;
+				left:0;
+				right:0;
+
+				.captions-inner {
+					padding:30px;
+					padding-left:20px;
+					color:white;
+					text-align:right;
+
+					.title {
+						border-bottom:1px solid white;
+						margin-bottom:13px;
+
+						h3 {
+							@include fs(32);
+							letter-spacing:1px;
+							text-transform:uppercase;
+							font-weight:700;
+							padding-bottom:0;
+
+							@media (max-width:$screen-phone) {
+								@include fs(22);
+							}
+						}
+					}
+
+					.info {
+						@include fs(12);
+						text-transform:uppercase;
+						font-family:$cabin;
+						font-weight:700;
+					}
+
+					.caption {
+						@include fs(16);
+						padding-top:15px;
+						font-weight:400;
+					}
+
+					.company {
+
+					}
+				}
+			}
+
+			&:hover {
+				.overlay {
+					opacity:1;
+				}
+
+			}
+
+		}
+	}
+}
