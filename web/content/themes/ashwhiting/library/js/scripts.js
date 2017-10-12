@@ -91,34 +91,42 @@ jQuery(document).ready(function($) {
 	    remove: false
 	});
 
-	// var canvas = $('#mycanvas');
-	// ctx = canvas.getContext('2d');
-	//
-	// window.addEventListener('resize', resizeCanvas, false);
-	//
-	// function resizeCanvas() {
-	// 	canvas.width = window.innerWidth;
-	// 	canvas.height = window.innerHeight/2;
-	// 	drawStuff
-	// }
-	//
-	// resizeCanvas;
-	//
-	//
-	//
-	// function drawStuff() {
-	//
-	// }
 
 	cellsize = Math.floor(Math.random() * 100) + 20
+	varia = Math.random();
 
 	var pattern = Trianglify({
-		variance:1,
+		variance:varia,
 		cell_size: cellsize,
 		seed: null,
 		x_colors: 'random'
 	});
-	pattern.canvas(document.getElementById('mycanvas'));
+
+	m = new XMLSerializer().serializeToString(pattern.svg());
+
+	k = window.btoa(m)
+	var element = $('.header_canvas');
+	var make_svg_path = 'url(data:image/svg+xml;base64,' + k + ')';
+
+	element.css('background', make_svg_path)
+
+	// SCROLL REVEAL
+
+	window.sr = ScrollReveal({reset:true});
+	sr.reveal('.reveal', {
+		scale:1,
+		reset: false,
+	});
+
+	sr.reveal('.reveal-noslide', {
+		scale:1,
+		distance:0,
+		reset: false,
+	});
+
+
+
+
 
 
 });

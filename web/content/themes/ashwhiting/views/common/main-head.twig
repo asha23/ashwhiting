@@ -10,6 +10,25 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+	<script src="{{ theme.link }}/build/js/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+
+      // Add class to <html> if ScrollReveal is supported
+      // Note: this method is deprecated, and only works in version 3
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+    </script>
+
+	<style>
+
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .sr .reveal { visibility: hidden; }
+
+    </style>
+
 	<title>
 	{% if wp_title %}
 		{{ wp_title }}

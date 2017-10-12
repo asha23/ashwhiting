@@ -17,7 +17,7 @@
 
 			<a href="link" target="{{ target }}" title="{{ caption }}">
 
-				<article class="portfolio-item">
+				<article class="portfolio-item reveal">
 
 					{% set folio = folio_item.portfolio_items %}
 					{% if folio.image %}
@@ -30,16 +30,10 @@
 						<img src="{{ img }}" class="img-respond">
 					</figure>
 
-
-
 					<div class="overlay">
 						<div class="overlay-inner">
 
-
-
-
 						</div>
-
 					</div>
 
 					<div class="captions match">
@@ -55,9 +49,6 @@
 							</div>
 						</div>
 					</div>
-
-
-
 
 					{{ folio.internal_link }}
 					{{ folio.external_link }}

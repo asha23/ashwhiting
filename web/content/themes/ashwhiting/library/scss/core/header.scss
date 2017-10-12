@@ -5,13 +5,46 @@
 	.main-logo {
 		display:inline-block;
 		@include fs(100,0);
-		transform: rotate(90deg);
 		position: fixed;
 		top: 40%;
 		left: -293px;
 		z-index: 1000;
 		text-align: left;
 		text-transform:uppercase;
+	}
+}
+
+
+.header_canvas {
+
+	height:300px;
+	width:100%;
+	background-size:cover!important;
+	background-position:center top;
+	background-attachment:fixed;
+
+	align-items: center;
+    display: flex;
+    justify-content: center;
+
+	-webkit-transform: translateZ(0px);
+	font-smoothing: antialiased;
+
+	@media (max-width:$screen-sm-max) {
+		height:100px;
+	}
+
+	.logo {
+		color:white;
+		-webkit-backface-visibility: hidden;
+
+		h1 {
+			font-size:10vw;
+			padding:0;
+			margin:0;
+			font-weight:700;
+			color:rgba(255,255,255,0.7);
+		}
 
 	}
 }

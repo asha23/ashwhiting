@@ -44,6 +44,7 @@ var jsFileList = [
 	config.bowerPath        + 'vminpoly/parser.js',
 	config.bowerPath        + 'vminpoly/tokenizer.js',
 	config.bowerPath        + 'vminpoly/vminpoly.js',
+	config.bowerPath        + 'scrollreveal/dist/scrollreveal.min.js',
 	config.jsPathVendor  	+ 'lg-thumbnail/lg-thumbnail.js',
 	config.jsPathVendor  	+ 'lg-video/lg-video.js',
 	config.jsPathVendor  	+ 'lg-fullscreen/lg-fullscreen.js',
@@ -86,7 +87,7 @@ var plumber = require('gulp-plumber');
 // ===========================================================================================================
 
 gulp.task('default', function() {
-	runSequence('bower', 'bower-files', 'modernizr', 'lint', 'scripts', 'styles');
+	runSequence('bower', 'bower-files', 'modernizr', 'lint', 'scripts', 'styles', 'watch');
 });
 
 // ===========================================================================================================
