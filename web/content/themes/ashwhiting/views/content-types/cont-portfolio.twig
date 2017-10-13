@@ -17,38 +17,25 @@
 
 			<a href="link" target="{{ target }}" title="{{ caption }}">
 
-				<article class="portfolio-item reveal">
+				<article class="portfolio-item">
 
-					{% set folio = folio_item.portfolio_items %}
-					{% if folio.image %}
-						{% set img = folio.image %}
-					{% else %}
-						{% set img = placeholder_image %}
-					{% endif %}
-
-					<figure class="image">
+					<figure class="effect-main">
+						{% set folio = folio_item.portfolio_items %}
+						{% if folio.image %}
+							{% set img = folio.image %}
+						{% else %}
+							{% set img = placeholder_image %}
+						{% endif %}
 						<img src="{{ img }}" class="img-respond">
+						<div class="overlay"></div>
+						<figcaption class="caption">
+							<h2 class="widont">{{ folio.title }}</h2>
+							<p class="small">{{folio.company}} - {{folio.client}}</p>
+							<p>{{ folio.caption }}</p>
+							<div class="visit-button">VISIT <i class="fa fa-angle-right"></i></div>
+						</figcaption>
 					</figure>
 
-					<div class="overlay">
-						<div class="overlay-inner">
-
-						</div>
-					</div>
-
-					<div class="captions match">
-						<div class="captions-inner">
-							<div class="title match">
-								<h3 class="widont">{{ folio.title }}</h3>
-							</div>
-							<div class="info">
-								{{folio.company}} - {{folio.client}}
-							</div>
-							<div class="caption match">
-								{{ folio.caption }}
-							</div>
-						</div>
-					</div>
 
 					{{ folio.internal_link }}
 					{{ folio.external_link }}

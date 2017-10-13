@@ -45,7 +45,7 @@ h3 {
 	font-family:$cabin;
 	margin-top: 0;
 	margin-bottom: 10px;
-	
+
 }
 
 .text-center {
@@ -66,4 +66,9 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.small {
+	@include fs(12);
+	
 }
