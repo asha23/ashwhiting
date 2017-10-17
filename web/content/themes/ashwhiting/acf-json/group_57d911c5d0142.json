@@ -44,6 +44,28 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_59e61308e285a",
+                            "label": "Animation",
+                            "name": "animation",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59e612ab5c3e3"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
                             "key": "field_57d9152463850",
                             "label": "Title",
                             "name": "title",
@@ -1888,5 +1910,5 @@
     ],
     "active": 1,
     "description": "These are the main page based content blocks",
-    "modified": 1507720004
+    "modified": 1508250449
 }

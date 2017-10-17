@@ -13,10 +13,9 @@
 	}
 
 	figure figcaption {
-		padding: 2em;
+		padding: 20px;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 1.25em;
 		backface-visibility: hidden;
 	}
 
@@ -57,11 +56,30 @@
 		}
 
 		h2 {
-
+			@include fs(34,36);
+			line-height:auto;
 			position: relative;
 			overflow: hidden;
 			padding: 5px 0;
 			margin-bottom:10px;
+
+			@media (max-width:1200px) {
+				@include fs(24,27);
+			}
+
+			@media (max-width:1024px) {
+				@include fs(24,27);
+				font-size:2.5vw;
+				line-height:auto;
+			}
+
+			@media (max-width:$screen-sm-max) {
+				@include fs(28,32);
+
+
+			}
+
+
 
 			&::after {
 				position: absolute;
@@ -73,14 +91,50 @@
 				content: '';
 				transition: transform 0.35s;
 				transform: translate3d(-100%,0,0);
+
+				@media (max-width:1024px) {
+					transform: translate3d(0,0,0);
+				}
 			}
 		}
 
+		.small {
+			@include fs(12,14);
+		}
+
 		p {
+			@include fs(18,22);
+			font-size:1vw;
+			line-height:1.3vw;
 			padding: 0;
 			opacity: 0;
 			transition: opacity 0.35s, transform 0.35s;
 			transform: translate3d(100%,0,0);
+
+			@media (max-width:1024px) {
+				@include fs(18,22);
+				font-size:1vw;
+				line-height:1vw;
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
+
+			@media (max-width:$screen-sm-max) {
+				@include fs(16,20);
+				font-size:2vw;
+				line-height:2.5vw;
+				line-height:auto;
+
+			}
+
+			@media (max-width:$screen-xs-max) {
+				@include fs(16,20);
+				font-size:4vw;
+				line-height:5vw;
+				line-height:auto;
+
+
+			}
 		}
 
 		.overlay {

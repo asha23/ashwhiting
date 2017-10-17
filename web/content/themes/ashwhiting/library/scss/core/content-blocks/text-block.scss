@@ -56,10 +56,16 @@
 			.full-width-content {
 				margin-top:90px;
 				text-align:justify;
+				@include fs(18,22);
 
-				@media (max-width:$screen-xs-max) {
+
+
+				@media (max-width:$screen-sm-max) {
 					@include fs(16,20);
+
 				}
+
+
 			}
 		}
 	}
