@@ -9,7 +9,7 @@
 	<div class="row">
 
 	{% if block_type == "full-width" %}
-	
+
 		<article class="full-width col-xs-12">
 			{% if title %}
 				<header>
@@ -51,6 +51,47 @@
 			{% endif %}
 
 			{{ split_text }}
+		</article>
+
+
+	{% elseif con.block_type == "split_text" %}
+		{% set split_text_left = con.split_text_left %}
+		{% set split_text_right = con.split_text_right %}
+		{% set icon_left = con.icon_left %}
+		{% set icon_right = con.icon_right %}
+
+		{% if title %}
+			<header class="col-md-12">
+				<h2>{{ title }}</h2>
+			</header>
+		{% endif %}
+
+		<article class="text-block-left col-md-{{ left_column_width }} col-sm-6 {{ left_md_class }}{{ right_column_width }} {{ left_sm_class }}">
+			<div class="row">
+				<div class="col-sm-2">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa {{ icon_left }} fa-stack-1x fa-inverse"></i>
+					</span>
+				</div>
+				<div class="col-sm-10">
+					{{ split_text_left }}
+				</div>
+			</div>
+		</article>
+
+		<article class="text-block-right col-md-{{ right_column_width }} col-sm-6 {{ right_md_class }}{{ left_column_width }} {{ right_sm_class }}">
+			<div class="row">
+				<div class="col-sm-2">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa {{ icon_right }} fa-stack-1x fa-inverse"></i>
+					</span>
+				</div>
+				<div class="col-sm-10">
+					{{ split_text_right }}
+				</div>
+			</div>
 		</article>
 
 	{% endif %}
