@@ -145,7 +145,7 @@ jQuery(document).ready(function($) {
 	$('.random-image').hide();
 
 	$('.random-image').css({
-		'background-image' : 'url(https://source.unsplash.com/collection/631021/1600x900)'
+		'background-image' : 'url(https://source.unsplash.com/collection/1315254/1600x900)'
 	}).fadeIn(3000);
 
 	// Logo fade
