@@ -106,14 +106,15 @@ jQuery(document).ready(function($) {
 	// Trianglify
 	// ============================================
 
-	cellsize = Math.floor(Math.random() * 300) + 100
+	cellsize = Math.floor(Math.random() * 200) + 50
 	varia = Math.random();
 
 	var pattern = Trianglify({
-		variance:varia,
+		variance:1,
 		cell_size: cellsize,
 		seed: null,
-		x_colors: 'random'
+		x_colors: 'random',
+		y_colors: 'match_x'
 	});
 
 	m = new XMLSerializer().serializeToString(pattern.svg());
@@ -144,7 +145,7 @@ jQuery(document).ready(function($) {
 	$('.random-image').hide();
 
 	$('.random-image').css({
-		'background-image' : 'url(https://source.unsplash.com/collection/800592/1600x900)'
+		'background-image' : 'url(https://source.unsplash.com/collection/631021/1600x900)'
 	}).fadeIn(3000);
 
 	// Logo fade
