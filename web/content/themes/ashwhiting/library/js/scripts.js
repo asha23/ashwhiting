@@ -80,6 +80,8 @@ jQuery(document).ready(function($) {
 		pauseOnHover:true,
 	});
 
+	// Kill widows
+	// ============================================
 
 	$(".widont").each(function() {
 		var wordArray = $(this).text().split(" ");
@@ -90,6 +92,9 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	// Match height
+	// ============================================
+
 	$('.match').matchHeight({
 		byRow: true,
 	    property: 'height',
@@ -98,7 +103,10 @@ jQuery(document).ready(function($) {
 	});
 
 
-	cellsize = Math.floor(Math.random() * 100) + 20
+	// Trianglify
+	// ============================================
+
+	cellsize = Math.floor(Math.random() * 300) + 100
 	varia = Math.random();
 
 	var pattern = Trianglify({
@@ -116,7 +124,8 @@ jQuery(document).ready(function($) {
 
 	element.css('background', make_svg_path)
 
-	// SCROLL REVEAL
+	// ScrollReveal
+	// ============================================
 
 	window.sr = ScrollReveal({reset:true});
 	sr.reveal('.reveal', {
@@ -129,6 +138,22 @@ jQuery(document).ready(function($) {
 		distance:0,
 		reset: false,
 	});
+
+	// Random Brighton Image
+	// ============================================
+	$('.random-image').hide();
+
+	$('.random-image').css({
+		'background-image' : 'url(https://source.unsplash.com/collection/800592/1600x900)'
+	}).fadeIn(3000);
+
+	// Logo fade
+	// ===============
+
+	$('.logo').hide();
+
+	$('.logo').fadeIn(1000);
+
 
 
 

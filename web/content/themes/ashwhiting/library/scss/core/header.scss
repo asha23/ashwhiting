@@ -23,6 +23,7 @@
 	background-position:center top;
 	background-attachment:fixed!important;
 	position:relative;
+	overflow:hidden;
 
 	// align-items: center;
     // display: flex;
@@ -43,6 +44,8 @@
 		bottom:60px;
 		left:0;
 		right:0;
+		z-index:4;
+
 
 		@media (max-width:$screen-sm-max) {
 			bottom:-20px;
@@ -51,12 +54,26 @@
 		.header-logo-svg {
 			width:400px;
 			margin:0 auto;
-
+			mix-blend-mode: screen;
 
 			@media (max-width:$screen-sm-max) {
 				width:200px;
 			}
 		}
 
+	}
+
+	.random-image {
+		position:absolute;
+		left:0;
+		right:0;
+		top:-40px;
+		bottom:-70px;
+		opacity:0.4;
+		z-index:3;
+		background-size:cover;
+		background-position:bottom center;
+		background-attachment:fixed!important;
+		background-blend-mode: multiply;
 	}
 }
