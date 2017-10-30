@@ -140,13 +140,7 @@ jQuery(document).ready(function($) {
 		reset: false,
 	});
 
-	// Random Brighton Image
-	// ============================================
-	$('.random-image').hide();
 
-	$('.random-image').css({
-		'background-image' : 'url(https://source.unsplash.com/collection/1315254/1600x900)'
-	}).fadeIn(3000);
 
 	// Logo fade
 	// ===============
@@ -155,10 +149,28 @@ jQuery(document).ready(function($) {
 
 	$('.logo').fadeIn(1000);
 
+	$('.random-image').hide();
 
 
 
 
 
+});
+
+$('.loaded-image')
+
+     .load(
+
+          function(){
+
+			  $('.random-image').css({
+				 'background-image' : 'url(https://source.unsplash.com/collection/1315254/1600x900)'
+			  }).fadeIn(3000);
+
+          }
+
+     );
+
+$(window).bind("load", function() {
 
 });
