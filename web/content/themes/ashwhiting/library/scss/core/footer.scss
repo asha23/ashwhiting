@@ -20,6 +20,12 @@
 			article {
 				@include fs(18);
 			}
+
+			.view-source{
+				margin-top:30px;
+				margin-bottom:30px;
+				@include fs(14);
+			}
 		}
 	}
 }
