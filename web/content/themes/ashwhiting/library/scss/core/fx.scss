@@ -47,7 +47,7 @@
 		img {
 			max-width: none;
 			width: calc(100%);
-			transition: opacity 0.35s, transform 0.35s;
+			transition: opacity 0.35s, transform 0.6s;
 			backface-visibility: hidden;
 		}
 
@@ -75,11 +75,7 @@
 
 			@media (max-width:$screen-sm-max) {
 				@include fs(28,32);
-
-
 			}
-
-
 
 			&::after {
 				position: absolute;
@@ -89,7 +85,7 @@
 				height: 3px;
 				background: #fff;
 				content: '';
-				transition: transform 0.35s;
+				transition: transform 0.6s;
 				transform: translate3d(-100%,0,0);
 
 				@media (max-width:1024px) {
@@ -108,7 +104,7 @@
 			line-height:1.3vw;
 			padding: 0;
 			opacity: 0;
-			transition: opacity 0.35s, transform 0.35s;
+			transition: opacity 0.35s, transform 0.6s;
 			transform: translate3d(100%,0,0);
 
 			@media (max-width:1024px) {
@@ -132,8 +128,6 @@
 				font-size:4vw;
 				line-height:5vw;
 				line-height:auto;
-
-
 			}
 		}
 
@@ -147,6 +141,9 @@
 			bottom:0;
 			transition:opacity 0.35s;
 
+			@media (max-width:1024px) {
+				opacity:0.7;
+			}
 		}
 
 		.visit-button {
@@ -156,14 +153,18 @@
 			@include fs(16);
 			display:inline-block;
 			padding:5px;
-			padding-left:10px;
-			padding-right:10px;
+			padding-left:20px;
+			padding-right:20px;
 			margin-top:10px;
 			background:rgba(255,255,255,0.3);
-			border:1px solid white;
-			transition: opacity 0.35s, transform 0.35s;
+			transition: opacity 0.6s, transform 0.35s;
 			transform: translate3d(100%,0,0);
 			opacity:0;
+
+			@media (max-width:1024px) {
+				opacity:1;
+				transform: translate3d(0,0,0);
+			}
 		}
 
 		&:hover {

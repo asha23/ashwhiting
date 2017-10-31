@@ -140,6 +140,12 @@ jQuery(document).ready(function($) {
 		reset: false,
 	});
 
+	sr.reveal('.reveal-folio', {
+		opacity: 0.2,
+		duration: 1000,
+		viewFactor: 0.8,
+	}, 50)
+
 
 
 	// Logo fade
@@ -150,6 +156,8 @@ jQuery(document).ready(function($) {
 	$('.logo').fadeIn(1000);
 
 	$('.random-image').hide();
+
+	$('.portfolio').animate({opacity:1}, 3000);
 
 
 

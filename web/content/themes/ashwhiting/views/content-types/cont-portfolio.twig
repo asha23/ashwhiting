@@ -2,6 +2,8 @@
 
 {% set con = content_block %}
 {% set portfolio = con.portfolio %}
+
+
 {% set placeholder_image = theme.link ~ "/build/images/placeholder.png" %}
 {% set active = con.active %}
 
@@ -9,6 +11,8 @@
 <section class="container-fluid portfolio">
 	<div class="row">
 		{% for folio_item in portfolio %}
+			{% set folio = folio_item.portfolio_items %}
+
 			{% if folio.link_select == "internal" %}
 				{% set link = folio.internal_link %}
 				{% set target = "_self" %}
@@ -17,12 +21,14 @@
 				{% set target = "_blank" %}
 			{% endif %}
 
+
+
 			<a href="{{link}}" target="{{ target }}" title="{{ caption }}">
 
-				<article class="portfolio-item reveal">
+				<article class="portfolio-item reveal-folio">
 
 					<figure class="effect-main">
-						{% set folio = folio_item.portfolio_items %}
+
 						{% if folio.image %}
 							{% set img = folio.image %}
 						{% else %}
@@ -31,8 +37,9 @@
 						<img src="{{ Image(img).src('folio') }}" class="img-respond" alt="{{ image.alt }}">
 						<div class="overlay"></div>
 						<figcaption class="caption">
-							<h2 class="widont">{{ folio.title }}</h2>
-							<p class="small">{{folio.company}} - {{folio.client}}</p>
+
+							<h2 class="">{{ folio.title }}</h2>
+							<p class="small">{{folio.company}} - {{folio.client}} - DEVELOPED IN {{folio.date}}</p>
 							<p>{{ folio.caption }}</p>
 							<div class="visit-button">VISIT <i class="fa fa-angle-right"></i></div>
 						</figcaption>
@@ -40,6 +47,8 @@
 
 				</article>
 			</a>
+
+
 		{% endfor %}
 </section>
 {% endif %}

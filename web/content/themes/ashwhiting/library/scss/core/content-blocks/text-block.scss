@@ -58,11 +58,17 @@
 				text-align:justify;
 				@include fs(18,22);
 
-
-
 				@media (max-width:$screen-sm-max) {
 					@include fs(16,20);
+					text-align:left;
 
+
+				}
+
+				@media (max-width:$screen-xs-max) {
+					h2 {
+						@include fs(16,20);
+					}
 				}
 
 

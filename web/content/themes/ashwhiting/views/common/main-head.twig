@@ -12,8 +12,19 @@
 
 	<style>
 
-      /* Ensure elements load hidden before ScrollReveal runs */
-      .sr .reveal { visibility: hidden; }
+      /* Initial states to stop fouc */
+
+      .reveal,
+	  .reveal-noslide { visibility: hidden; }
+
+	  .reveal-folio {
+		  -webkit-transform: translateY(20px) scale(0.9);
+		  transform: translateY(20px) scale(0.9);
+	  }
+
+	  .portfolio {
+		  opacity:0;
+	  }
 
     </style>
 
