@@ -10,3 +10,4 @@ web/wp
 .DS_Store
 .sass-cache
 .env
+assets
