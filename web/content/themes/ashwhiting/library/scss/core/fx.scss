@@ -106,6 +106,7 @@
 			opacity: 0;
 			transition: opacity 0.35s, transform 0.6s;
 			transform: translate3d(100%,0,0);
+			margin-bottom:20px;
 
 			@media (max-width:1024px) {
 				@include fs(18,22);
@@ -148,17 +149,22 @@
 
 		.visit-button {
 			position:absolute;
-			bottom:30px;
-			right:30px;
+			bottom:0;
+			right:0;
+			left:0;
 			@include fs(16);
 			display:inline-block;
 			padding:5px;
 			padding-left:20px;
 			padding-right:20px;
+			padding-top:20px;
+			padding-bottom:20px;
+			text-align:right;
+			font-weight:700;
 			margin-top:10px;
-			background:rgba(255,255,255,0.3);
+			background:rgba(255,255,255,0.1);
 			transition: opacity 0.6s, transform 0.35s;
-			transform: translate3d(100%,0,0);
+			transform: translate3d(-100%,0,0);
 			opacity:0;
 
 			@media (max-width:1024px) {
@@ -171,6 +177,7 @@
 			img {
 				opacity: 0.8;
 				transform: translate3d(0,0,0);
+				transform: scale(1.2);
 			}
 
 			p,

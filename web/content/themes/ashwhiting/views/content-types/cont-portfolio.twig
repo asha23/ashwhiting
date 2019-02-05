@@ -4,10 +4,13 @@
 {% set portfolio = con.portfolio %}
 
 
+
+
 {% set placeholder_image = theme.link ~ "/build/images/placeholder.png" %}
 {% set active = con.active %}
 
-{% if active %}
+
+
 <section class="container-fluid portfolio">
 	<div class="row">
 		{% for folio_item in portfolio %}
@@ -39,9 +42,9 @@
 						<figcaption class="caption">
 
 							<h2 class="">{{ folio.title }}</h2>
-							<p class="small">{{folio.company}} - {{folio.client}} - DEVELOPED IN {{folio.date}}</p>
+							<p class="small">{{folio.company}} - {{folio.client}}</p>
 							<p>{{ folio.caption }}</p>
-							<div class="visit-button">VISIT <i class="fa fa-angle-right"></i></div>
+							<div class="visit-button">VISIT <i class="fa fa-chevron-right"></i></div>
 						</figcaption>
 					</figure>
 
@@ -51,4 +54,6 @@
 
 		{% endfor %}
 </section>
-{% endif %}
+
+
+

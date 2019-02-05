@@ -144,6 +144,7 @@ jQuery(document).ready(function($) {
 		opacity: 0.2,
 		duration: 1000,
 		viewFactor: 0.8,
+		reset: false
 	}, 50)
 
 

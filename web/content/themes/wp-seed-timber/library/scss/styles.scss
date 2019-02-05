@@ -1,0 +1,32 @@
+// ===========================================================================================================
+// INCLUDES
+// ===========================================================================================================
+
+@import "core/mixins";
+
+// BOOTSTRAP LAYOUT
+
+@import "bootstrap/custom-variables";
+@import "bootstrap/custom-bootstrap";
+
+// FONT AWESOME
+
+@import "fontawesome/font-awesome";
+
+// LIGHTGALLERY
+
+@import "lightgallery/lightgallery";
+
+.lg-outer .lg-item {
+    background: url("../images/loading.gif") no-repeat scroll center center transparent;
+}
+
+// PARTIALS
+
+@import "wordpress/wordpress-core";
+@import "core/globals";
+@import "core/typography";
+@import "core/colours";
+@import "core/blocks";
+@import "core/footer";
+@import "core/navbar";

@@ -1,0 +1,53 @@
+{# Text Block Logic #}
+
+{% set con = content_block %}
+{% set block_type = con.block_type %}
+{% set title = con.title %}
+{% set full_width_content = con.full_width_content %}
+
+<section class="container text-block">
+	<div class="row">
+
+	{% if block_type == "full-width" %}
+		<article class="full-width col-xs-12">
+			{% if title %}
+				<header>
+					<h2>{{ title }}</h2>
+				</header>
+			{% endif %}
+			{{ full_width_content }}
+		</article>
+	{% elseif con.block_type == "split" %}
+
+		{% set image_on = con.image_on %}
+		{% set split_image = con.split_image %}
+		{% set split_text = con.split_text %}
+		{% set left_column_width = con.left_column_width %}
+		{% set right_column_width = con.right_column_width %}
+
+		{% if image_on == "right" %}
+			{% set right_md_class = "col-md-pull-" %}
+			{% set left_md_class = "col-md-push-" %}
+			{% set right_sm_class = "col-sm-pull-6" %}
+			{% set left_sm_class = "col-sm-push-6" %}
+		{% endif %}
+
+		<article class="text-block-left col-md-{{ left_column_width }} col-sm-6 {{ left_md_class }}{{ right_column_width }} {{ left_sm_class }}">
+			<figure>
+				<img src="{{ TimberImage(split_image).src }}" class="img-responsive" alt="{{ con.title }}">
+			</figure>
+		</article>
+
+		<article class="text-block-right col-md-{{ right_column_width }} col-sm-6 {{ right_md_class }}{{ left_column_width }} {{ right_sm_class }}">
+			{% if title %}
+				<header>
+					<h2>{{ title }}</h2>
+				</header>
+			{% endif %}
+			{{ split_text }}
+		</article>
+
+	{% endif %}
+	</div>
+
+</section>
